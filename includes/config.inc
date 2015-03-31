@@ -50,11 +50,22 @@ function hsu_kalatheme_header_image_form() {
     '#weight' => -99,
   );
 
+  $form['open_hsu_header_image']['use_banner'] = array (
+    '#type' => 'checkbox',
+    '#title' => t('Add a custom banner image.'),
+    '#default_value' => theme_get_setting('use_banner'),
+  );
+
   $form['open_hsu_header_image']['header_file'] = array(
     '#type' => 'file',
     '#title' => t('File'),
     '#description' => t('Upload a file, allowed extensions: jpg, jpeg, png'),
-    '#default_value' =>theme_get_setting('header_file'),
+    '#default_value' => theme_get_setting('header_file'),
+    '#states' => array(
+      'visible' => array(
+        ':input[name="use_banner"]' => array('checked' => TRUE),
+      ),
+    ),
   );
 
   if (theme_get_setting('header_file')) {

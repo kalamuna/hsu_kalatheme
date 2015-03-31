@@ -21,6 +21,7 @@ function hsu_kalatheme_theme($existing, $type, $theme, $path) {
         'hide_site_name' => FALSE,
         'site_slogan' => '',
         'hide_site_slogan' => FALSE,
+        'hsu_banner' => '',
         'hsu_header' => '',
       ),
     ),
@@ -135,6 +136,7 @@ function hsu_kalatheme_process_page(&$variables) {
   $variables['hsu_fax'] = theme_get_setting('fax') ? theme_get_setting('fax') : NULL;
 
   // Add header file
+  $variables['hsu_banner'] = theme_get_setting('use_banner') ? theme_get_setting('use_banner') : NULL;
   $variables['hsu_header'] = theme_get_setting('header_file') ? theme_get_setting('header_file') : NULL;
 
 }

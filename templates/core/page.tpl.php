@@ -94,6 +94,7 @@
     'site_slogan' => $site_slogan,
     'hide_site_slogan' => $hide_site_slogan,
     'hsu_header' => $hsu_header,
+    'hsu_banner' => $hsu_banner,
   ));
 
   ?>
