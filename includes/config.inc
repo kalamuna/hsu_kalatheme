@@ -40,6 +40,43 @@ function hsu_kalatheme_location_form() {
   return $form;
 }
 
+function hsu_kalatheme_social_form() {
+  $form = array();
+
+  $form['open_hsu_social_info'] = array (
+    '#type' => 'fieldset',
+    '#title' => 'Social Media Info',
+    '#weight' => -97,
+  );
+
+  $form['open_hsu_social_info']['twitter'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Twitter URL'),
+    '#default_value' =>theme_get_setting('twitter'),
+  );
+
+  $form['open_hsu_social_info']['facebook'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook URL'),
+    '#default_value' =>theme_get_setting('facebook'),
+  );
+
+  $form['open_hsu_social_info']['instagram'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Instagram URL'),
+    '#default_value' =>theme_get_setting('instagram'),
+  );
+
+  $form['open_hsu_social_info']['youtube'] = array(
+    '#type' => 'textfield',
+    '#title' => t('YouTube URL'),
+    '#default_value' =>theme_get_setting('youtube'),
+  );
+
+  return $form;
+}
+
+
 
 function hsu_kalatheme_header_image_form() {
   $form = array();
