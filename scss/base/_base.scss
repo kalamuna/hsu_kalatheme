@@ -83,6 +83,7 @@ fieldset legend,
   z-index: 3;
 }
 
+// A couple of views rules clash with Bootstrap.
 #edit-options .collapsible {
   float: none;
   width: 95%;
