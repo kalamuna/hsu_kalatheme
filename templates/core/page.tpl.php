@@ -122,7 +122,7 @@
         </div>
       </div> <!-- /.section, /#top-content -->
 
-      <div id="content">
+      <div id="content" class="container">
         <div class="column <?php $no_panels ? print 'container' : ''; ?>">
           <?php print render($page['content']); ?>
         </div>
@@ -162,14 +162,9 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <a href="http://www.humboldt.edu/green" class="logos">
-            <img src="http://www.humboldt.edu/sites/all/themes/hsu/img/svg/greenscene.svg" alt="The Green Scene: Sustainability Matters at HSU" class="footer-logos greenscene">
-          </a>
-          <a href="http://www.humboldt.edu/giving" class="logos">
-            <img src="http://www.humboldt.edu/sites/all/themes/hsu/img/svg/giving2014.svg" class="footer-logos" alt="Giving to HSU">
-          </a>
+          
         </div>
-        <div class="col-sm-4 last-col">
+        <div class="col-sm-4 last-col social">
           <?php if ($hsu_twitter): ?>
             <a href="<?php print $hsu_twitter; ?>">
               <i class="fa fa-twitter-square fa-3x"></i>

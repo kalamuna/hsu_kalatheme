@@ -79,6 +79,13 @@ function hsu_kalatheme_preprocess_hsu_site_header(&$vars){
   }  
 }
 
+function hsu_kalatheme_preprocess_html(&$variables) {
+
+  /**
+  * loading web fonts and external css
+  */
+  drupal_add_css('//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', array('type' => 'external'));  
+} 
 /**
  * Override or insert variables into the page template.
  *
